@@ -1,0 +1,98 @@
+@import 'typo';
+
+
+%icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    content: "";
+    vertical-align: middle;
+}
+
+// flexbox row
+.container-services-1, .container-services-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom:10vh;
+}
+
+
+// List icones
+.details{
+    ul {
+        list-style:none;
+   
+        li{
+        @include typo-text;
+        list-style-type: none;
+        padding: 2vh;
+        }
+    }
+}
+
+.item1::before {
+   @extend %icon;
+    background: url("bath.png") no-repeat 0 0;
+    background-size: 100%;
+    
+}
+
+.item2::before {
+    @extend %icon;
+    background: url("./images/icon/towel.png") no-repeat;
+    background-size: 100%;
+}
+
+.item3::before {
+    @extend %icon;
+    background: url("./images/icon/breakfast.png") no-repeat;
+    background-size: 100%;
+}
+
+.item4::before {
+    @extend %icon;
+    background: url("./images/icon/desk.png") no-repeat;
+    background-size: 100%;
+}
+
+.item5::before {
+    @extend %icon;
+    background: url("./images/icon/view.png") no-repeat;
+    background-size: 100%;
+}
+
+.item1-2::after {
+  @extend %icon;
+   background: url("bath.png") no-repeat 0 0;
+   background-size: 100%;
+   
+}
+
+.item2-2::after {
+   @extend %icon;
+   background: url("./images/icon/towel.png") no-repeat;
+   background-size: 100%;
+}
+
+.item3-2::after {
+   @extend %icon;
+   background: url("./images/icon/breakfast.png") no-repeat;
+   background-size: 100%;
+}
+
+.item4-2::after {
+   @extend %icon;
+   background: url("./images/icon/desk.png") no-repeat;
+   background-size: 100%;
+}
+
+.item5-2::after {
+   @extend %icon;
+   background: url("./images/icon/view.png") no-repeat;
+   background-size: 100%;
+}
+

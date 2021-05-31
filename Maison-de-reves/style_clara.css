@@ -1,0 +1,307 @@
+@charset "UTF-8";
+html {
+  padding: 0% 15%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+#header_in_accueil {
+  background-image: url("images/ban.jpg");
+  width: 100%;
+  height: 10vh;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#header_in_accueil nav {
+  width: 100%;
+  padding: 1% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header_in_accueil nav a {
+  text-decoration: none;
+  color: #000;
+  text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #a1a1a1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#DCF8EF), to(#b0b0b0));
+  background-image: linear-gradient(to right, #DCF8EF, #b0b0b0);
+  width: 7vw;
+  height: 2vh;
+  text-align: center;
+  padding: 1.2%;
+  border-radius: 5%;
+  font-size: 2.5rem;
+}
+
+#header_in_accueil nav a:hover {
+  text-transform: uppercase;
+}
+
+#header_in_accueil h1 {
+  font-family: 'Bitter', serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  font-size: 5rem;
+  background-color: white;
+  display: inline-block;
+  background: transparent;
+  margin-top: 2px;
+}
+
+.la_page_daccueil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.la_page_daccueil {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+}
+
+.la_page_daccueil .all_in_slide {
+  width: 100%;
+}
+
+.about_family {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about_family img {
+  height: 40vh;
+  margin: 10px 0;
+}
+
+.about_family .family_explain {
+  width: 60%;
+  padding: 2%;
+  text-align: justify;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.image_hidden {
+  display: none;
+}
+
+/* Number text (1/4 - 4/4), le text affiché sur les images-carousel indiquant l'ordre des images */
+.number {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.second_number,
+.fourth_number {
+  color: #000;
+}
+
+/* Next & previous buttons, les boutons sur le carousel pour lister */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Positionner "next button" à droite */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover effet sur les butons de carousel */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Les points en-dessous des images de carousel indiquant le nombre d'images */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media all and (min-width: 368px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 1.2rem;
+  }
+  .la_page_daccueil {
+    margin-top: 25%;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url("https://raw.githubusercontent.com/HedyKatherine/Projet-gite/master/images/ban.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #header_in_accueil {
+    background: transparent;
+    border: 3px solid red;
+    height: 40vh;
+  }
+  #header_in_accueil nav {
+    border: 5px solid green;
+    height: 35vh;
+    width: 50vw;
+    background-color: rgba(255, 253, 245, 0.85);
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0 30%;
+  }
+  #header_in_accueil nav a {
+    margin: 10px 0;
+    background-image: none;
+  }
+  #header_in_accueil h1 {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+  .slideshow-container,
+  .span_hidden {
+    display: none;
+  }
+  .image_hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75vw;
+  }
+  .about_family {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about_family .family_explain {
+    width: inherit;
+    font-size: 2.5rem;
+    padding: 2% 0;
+  }
+  .family_explain {
+    background-color: rgba(255, 253, 245, 0.85);
+    border-radius: 5px;
+    margin: 10px 20px;
+  }
+}
+
+html {
+  padding: 0% 15%;
+  font-size: 62.5%;
+}
+
+.test {
+  background-image: url("images/ban.jpg");
+  width: 100%;
+  height: 10vh;
+  height: 200px;
+  padding: 0px;
+}
+/*# sourceMappingURL=style_clara.css.map */

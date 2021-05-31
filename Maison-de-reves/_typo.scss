@@ -1,0 +1,19 @@
+@mixin typo-text {
+    font-family:'Bitter', serif;
+    font-weight:400;
+    font-size: 1.6rem;
+    
+}
+
+@mixin typo-titre {
+    font-family: 'Bitter', serif;
+    font-weight:500;
+    font-size: 2.4rem;
+}
+
+@mixin typo-special {
+    font-family: 'Bitter', serif;
+    font-weight:300;
+    font-style: italic;
+    font-size: 2rem;
+}

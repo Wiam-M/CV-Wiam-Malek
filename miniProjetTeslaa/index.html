@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Tesla</title>
+</head>
+<body>
+   <!-- ENTETE -->
+<header>
+  <nav class="navbar bg-dark p-3">
+    <div class="container">
+      <img src="https://believemy.com/uploads/2f3811b9174e35a2d77902ffd36a9a37_4dfb82dd429edb6a11a81ff74e9abfc4.png" style="height: 30px" class="d-block mx-auto" >
+    </div>
+  </nav>
+</header>
+
+<!-- ICI : jumbotron -->
+<div class="jumbotron text-white" style="background: center/cover url('https://believemy.com/uploads/126d05180ddf6f2ea67c8b669855bf89_e45c0e92710b43b3b938ed8fc4938f71.png')">
+  <div class="container">
+    <h1 class="display-4">Bienvenue.</h1>
+    <p class="lead">Le site Tesla vous permet de commander vos fusées et vos voitures, même lorsque vous êtes dans votre canapé.   <span class="badge badge-success">Un conseillé est en ligne.</span></p>
+  </div>
+</div>
+
+<!-- PREMIERE SECTION -->
+<section>
+  <div class="container">
+    <!-- ICI : progress bar-->
+    <div class="progress mt-1">
+      <div class="progress-bar progress-bar-striped bg-danger" style="width:43%;"> 
+      </div>
+    </div>
+    <!-- ICI : alerte -->
+    <div class="alert alert-primary">
+    Bienvenue sur Tesla. Ce site est en maintenance.
+    <hr>
+      <!-- ICI : les deux boutons -->
+      <div class="btn-group btn-block">
+        <a href="#" class="btn btn-danger">Suivre les avancements</a>
+      <a href="#" class="btn btn-success">Nous contacter</a>
+      </div>
+    </div>
+
+      <nav>
+      <!-- ICI : fil d'ariane -->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"> <a href="#">Accueil</a></li>
+          <li class="breadcrumb-item active">Maintenance</li>
+        </ol>
+      </nav>
+  </div>
+</section>
+
+<!-- DEUXIEME SECTION -->
+<section>
+  
+  <div class="container">
+    
+    <!-- ICI : les cartes --> 
+    <div class="card-deck">
+    <div class="card bg-secondary text-white">
+      <img src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png" alt="carte de la marque Tesla" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">
+          Nouveautés
+        </h5>
+        <p class="card-text">
+          Vous pourrez bientôt acheter des fusées pour aller sur la lune
+        </p>
+      </div>
+    </div>
+    <div class="card bg-secondary text-white">
+      <img src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png" alt="carte de la marque Tesla" class="card-img-top">
+      <div class="card-header bg-secondary text-white">
+        Information
+      </div>
+      <div class="card-body">
+        <h5 class="cart-title">
+          Nouveautés
+        </h5>
+        <p class="card-text">
+          Les 30 premiers acheteurs de fusée partiront avec Elon Musk.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- TROISIEME SECTION -->
+<section class="bg-dark mt-3 text-white">
+  <div style="width: 350px" class=" container py-3 text-left mx-auto">
+    <h2>Contactez-nous</h2>
+    <!-- ICI : formulaire -->
+    <form action="">
+    <div class="form-group">
+      <label for="nom">Adresse email </label>
+      <input type="email" placeholder="Entrez votre adresse email" name="nom" class="form-control">
+      <div class="form-text text-muted">Nous ne partagerons pas votre adresse email.</div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Message</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-light">Submit</button>
+  </div>
+</form>
+</section>
+
+<!-- ICI : pied de page -->
+    <footer class="bg-secondary p-3">
+      <div class="container">2021 © Tesla</div>
+    </footer>
+</body>
+</html>

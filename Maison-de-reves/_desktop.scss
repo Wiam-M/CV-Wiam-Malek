@@ -1,0 +1,56 @@
+
+    // CAROUSEL
+    img {
+        display: block;
+        max-width: 100%;
+      }
+      
+      .wrapper {
+        overflow: hidden;
+        height: 50vh;
+        width: 40vw;
+        display: grid;
+        grid-template-columns: 1.5fr 5fr; // proportion de la grille
+        grid-gap: 10px;
+      }
+      
+      .gallery {
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+      }
+      
+      .gallery__img {
+        scroll-snap-align: start;
+        margin-bottom: 10px;
+        min-height: 50vh; //taille de la grande image
+        object-fit: cover;
+      }
+      
+      .lil-nav {
+        overflow-y: scroll;
+        overflow-x: hidden;
+      
+        a {
+          height: 20vh; // height of the little image
+          display: flex;
+          margin-bottom: 10px;
+        }
+      }
+      
+      .lil-nav__img {
+        object-fit: cover;
+      }
+    
+     
+
+      .details2{
+        order:1;
+        text-align: end;
+        margin-right: 2vw;
+      }
+      
+      .wrapper2 {
+        order:2;
+      }
+           

@@ -1,0 +1,8 @@
+@mixin marge ($font-size) {
+    padding:0% 15%;
+    font-size:$font-size; 
+}
+
+html {@include marge(62.5%);
+}
+

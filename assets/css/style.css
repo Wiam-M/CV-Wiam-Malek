@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Titillium+Web&display=swap');
+
+[data-theme="dark"] {
+    --primary: rgb(211, 164, 20);
+    --secondary: white;
+    --fa: white;
+    --backgroundForm: rgb(108, 118, 126);
+    --backgroundCard: rgb(52, 59, 64);
+    --mainBackground: rgb(37, 40, 41);
+    --moonVisibility: hidden;
+    --backgroundImage: url("../images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+    --backgroundCover: url('https://s3.amazonaws.com/js30-cdn/smokey-mountains-kracked.jpg') center no-repeat fixed;
+    --timeLineBackground: rgb(47, 48, 49);
+  }
+
+  [data-theme="light"] {
+    --primary: rgb(71, 55, 4);
+    --secondary: black;
+    --fa: white;
+    --backgroundForm: rgb(182, 183, 184);
+    --backgroundCard: rgb(179, 180, 180);
+    --mainBackground: rgb(243, 242, 240);
+    --sunVisibility: hidden;
+    --backgroundImage: url("../images/jexo-5OgJB9CVb68-unsplash.jpg");
+    --backgroundCover: url('../images/simon-berger-jCdJzqGnofw-unsplash.jpg') center no-repeat fixed;
+    --timeLineBackground: rgb(123, 125, 126);
+  }
+
+body{
+    background: var(--mainBackground);
+    font-family: "Raleway", sans-serif;
+}
+
+#bg-img{
+    background: var( --backgroundImage);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+.top{
+    margin-top: -200px;
+}
+
+.fa{
+    color: var( --fa);
+}
+.title{
+    margin-top:40px;
+}
+
+.main-timeline{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 50px 0 0;
+    position: relative;
+}
+
+.main-timeline .timeline{
+    margin: -42px 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+/* left radius border */
+.main-timeline .timeline:before{
+    content: '';
+    border: 20px solid #d3aa6c;
+    height: 90%;
+    width: 50%;
+    border-radius: 100px;
+    position: absolute;
+    left: 12%;
+    top: 22px;
+    z-index: -1;
+}
+.main-timeline .timeline-content{
+    background-color: var(--timeLineBackground);
+    text-align: center;
+    width: 60%;
+    padding: 10px 15px 60px;
+    margin: 0 auto;
+    display: block;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-year{
+    color: #d3aa6c;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.main-timeline .title{
+    color: var(--secondary);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.main-timeline .title:after{
+    content: '';
+    background-color: #6d6148;
+    height: 3px;
+    width: 60px;
+    margin: 12px auto;
+    display: block;
+}
+.main-timeline .description{
+    color: var(--secondary);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/* right radius border */
+.main-timeline .timeline:nth-child(even):before{
+    left: auto;
+    right: 12%;
+}
+.competence{
+    background: var(--backgroundCover);
+    background-size: cover;
+}
+/* color of border, title:after, timeline-years depending to nth-child */
+.main-timeline .timeline:nth-child(4n+2):before{ border-color: #9e908d; }
+.main-timeline .timeline:nth-child(4n+2) .timeline-year{ color: #9e908d; }
+.main-timeline .timeline:nth-child(4n+2) .title:after{ background-color: #9e908d; }
+.main-timeline .timeline:nth-child(4n+3):before{ border-color: #a5c0cc; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-year{ color: #a5c0cc;; }
+.main-timeline .timeline:nth-child(4n+3) .title:after{ background-color: #a5c0cc; }
+.main-timeline .timeline:nth-child(4n+4):before{ border-color: #9e87a1; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-year{ color: #9e87a1; }
+.main-timeline .timeline:nth-child(4n+4) .title:after{ background-color: #9e87a1; }
+.main-timeline .timeline:nth-child(4n+5):before{ border-color: #7ea09d; }
+.main-timeline .timeline:nth-child(4n+5) .timeline-year{ color: #7ea09d; }
+.main-timeline .timeline:nth-child(4n+5) .title:after{ background-color: #7ea09d; }
+
+button{
+    color: var( --secondary);
+}
+
+.background-darkLight, .table-color{
+    background: var(--backgroundCard);
+}
+.background-skills{
+    background-color: var( --timeLineBackground);
+}
+
+.table-color{
+    color: var( --secondary);
+}
+.text-color, .text-form-color{
+    color: var( --secondary);
+}
+
+.textColor{
+    color: var( --primary);
+}
+
+.background-secondary{
+    background-color: var( --backgroundForm);
+}
+.fa-moon,
+.fa-sun{
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  color: var( --fa);
+}
+.fa-moon:hover{color:#6d6148}
+.fa-sun:hover{color:#d3aa6c}
+
+.fa-moon{
+    visibility: var(--moonVisibility);
+  }
+  .fa-sun{
+    visibility: var(--sunVisibility);
+  }
+
+  @media only screen and (max-width:990px){
+    .main-timeline .timeline:before{
+        left: 5%;
+        border-radius: 120px;
+    }
+    .main-timeline .timeline:nth-child(even):before{ right: 5%; }
+}
+@media only screen and (max-width:576px){
+    .main-timeline:before{ width: 85%; }
+    .main-timeline .timeline{ margin: -38px 0 0 0; }
+    .main-timeline .timeline:before{
+        border-width: 8px;
+        border-radius: 0;
+        left: 0;
+    }
+    .main-timeline .timeline:nth-child(even):before{ right: 0; }
+    .main-timeline .timeline-content{ width: 85%; }
+    .main-timeline .title{ font-size: 18px; }
+}
+.competence .skills-content {
+    margin-top: 30px;
+  }
+  
+  .competence .skills-content .progress {
+    height: 50px;
+    display: block;
+    background: none;
+  }
+  
+  .competence .skills-content .progress .skill {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: #d3aa6c;
+  }
+  
+  .competence .skills-content .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .competence .skills-content .progress-bar-wrap {
+    background: #cdd1d6;
+  }
+  
+  .competence .skills-content .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #d3aa6c;
+  }
+  #style{
+    width: 600px;
+}
+
+  @media (max-width: 600px) {
+   .text-justify{
+       width:90%
+   }
+   tr{
+       font-size: 13px;
+   }
+  #style{
+      width: 350px;
+  }
+  }

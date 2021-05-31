@@ -1,0 +1,80 @@
+#sasukeChoiseImg{
+    visibility: hidden;
+    background-color:rgb(255, 255, 253);
+    margin: 10% 0;
+  }
+  .vertical-line{
+    border-left: 2px dashed rgb(243, 241, 241);
+    display: inline-block;
+    height: 330px;
+    margin: 0 20px;
+  }
+  #sasukeImg{
+    float: right; 
+    margin: 0px 0px 15px 15px;
+    width :150px; 
+    height: 250px;
+  }
+  #narutoImg{
+    float: left; 
+    margin: 0px 15px 15px 0px;
+    width :150px; 
+    height: 250px;
+  }
+
+  @media (max-width: 800px){
+    #narutoImg{
+        margin-left: 10px;
+    }
+    #narutoImg, #sasukeImg{
+        width :130px; 
+        height: 200px;
+    }
+    p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #rock , #paper, #scissors, #sasukeChoiseImg{
+        width: 70px;
+        height: 70px;
+    }
+    .vertical-line{
+        height: 270px;
+    }
+  }
+
+  @media (max-width: 510px){
+    #narutoImg, #sasukeImg{
+        width :100px; 
+        height: 150px;
+    }
+    p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #rock , #paper, #scissors, #sasukeChoiseImg{
+        width: 50px;
+        height: 50px;
+    }
+    .vertical-line{
+        height: 200px;
+    }
+  }
+
+  @media (max-width: 410px){
+    #narutoImg, #sasukeImg{
+        width :60px; 
+        height: 80px;
+    }
+    p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #rock , #paper, #scissors, #sasukeChoiseImg{
+        width: 35px;
+        height: 35px;
+    }
+    .vertical-line{
+        height: 130px;
+    }
+  }

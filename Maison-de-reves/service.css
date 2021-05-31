@@ -1,0 +1,44 @@
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+  
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 20px;
+    overflow: hidden;
+    height: 50vh; 
+    width: 35vw;
+    
+
+  }
+
+  .gallery {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .lil-nav {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .gallery__img {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+    min-height: 50vh;
+    object-fit: cover;
+  }
+
+  .lil-nav a {
+    height: 200px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .lil-nav__img {
+    object-fit: cover;
+  }

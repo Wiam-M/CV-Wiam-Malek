@@ -1,0 +1,161 @@
+@import "banniere";
+@import "body";
+@import "typo";
+body{
+  @include typo-text;
+}
+#header_in_accueil{
+    @include banniere;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    nav{
+        width: 100%;
+        padding: 1% 5%;
+        display: flex;
+        justify-content: space-between;
+        & a{
+          text-decoration: none;
+          color: #000;
+          text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #a1a1a1;
+          background-image: linear-gradient(to right, #DCF8EF, #b0b0b0);
+          width: 7vw;
+          height: 2vh;
+          text-align: center;
+          padding: 1.2%;
+          border-radius: 5%;
+          font-size: 2.5rem;
+          &:hover{
+            text-transform: uppercase;
+          }
+        }
+    }
+    h1 {
+    @include typo-titre;
+    font-size: 5rem;
+    background-color: white;
+    display: inline-block;
+    background: transparent;
+    margin-top: 2px;
+    }
+}
+.la_page_daccueil{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.la_page_daccueil{
+  flex-direction: column;
+  font-size: 2rem;
+  .all_in_slide{
+    width: 100%;
+  }
+}
+
+.about_family{
+  display: flex;
+  justify-content: space-evenly;
+  & img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  & .family_explain{
+    width: 60%;
+    padding: 2%;
+    text-align: justify;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.image_hidden{
+  display: none;
+}
+/* Number text (1/4 - 4/4), le text affiché sur les images-carousel indiquant l'ordre des images */
+.number{
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.second_number,
+.fourth_number{
+  color: #000;
+}
+/* Next & previous buttons, les boutons sur le carousel pour lister */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positionner "next button" à droite */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover effet sur les butons de carousel */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Les points en-dessous des images de carousel indiquant le nombre d'images */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@import "media";
+@import 'body';
+@import 'typo';
+@import 'banniere';
+
+.test {
+    @include banniere;
+    height: 200px;
+    padding:0px;
+}

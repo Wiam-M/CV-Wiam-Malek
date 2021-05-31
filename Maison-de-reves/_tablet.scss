@@ -1,0 +1,66 @@
+@import 'typo';
+
+@media only screen and (max-width: 768px) {
+
+    .container-services-1, .container-services-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+        margin-bottom:10vh;
+
+      }
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 5px;
+    overflow: hidden;
+    height: 30vh; 
+    width: 60vw;
+
+  }
+
+  .gallery__img {
+    scroll-snap-align: start;
+    margin-bottom: 5px;
+    min-height: 30vh;//taille grande iimage
+    object-fit:cover;
+  }
+
+  .lil-nav a {
+    height: 10vh;//taille petite image
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+
+// icons et description
+
+.details{
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0px;
+    li{
+        font-size: 1.2rem;
+     }
+    }
+}
+
+.details2{
+    order:2;
+    text-align: end;
+    margin-right: 2vw;
+  }
+  
+  .wrapper2 {
+    order:1;
+  }
+
+
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  text-align:center;
+  background-image:url('images/thumb-1920-605592.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:rgb(124, 123, 123);
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:32px;
+  padding-top:10vh;
+  /* height:100vh; */
+  overflow:hidden;
+}
+button{
+  display:block;
+}
+
+.container-fluid {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  width:100%;
+  animation: reveal 2s ;
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    100% {opacity:1}
+}
+
+h2 {
+  font-size:23px;
+  color:#999;
+  margin-top:20px;
+}
+
+@media (max-width: 800px){
+  body{
+    background-image: none;
+  }
+  
+}

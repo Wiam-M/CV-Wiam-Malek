@@ -1,0 +1,134 @@
+/* A PROPOS DE MOI */
+body{
+    margin: 0%;
+    width: 100%;  
+}
+h1, h2{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 1.7em;
+}
+/*Navbar Fixed Top*/
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #EF4423;
+    height: 70px;
+    overflow: hidden;
+    top: 0%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Gamja Flower', cursive;
+    padding-right: 35px;
+}
+nav a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: white;
+}
+#logoJudo{
+    margin-left:2%;
+}
+/*End header*/
+section{
+    margin-top: 70px;
+}
+article h1{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #332B29;
+    color: white;
+    height: 40px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+article p{
+    margin: 3% 2%;
+}
+article ul li{
+padding: 5px;
+}
+/* coaches part is stylized with flexboxes */
+.imagesJudo{
+    display: flex;
+    margin-bottom: 10%;
+}
+.center{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 15px;
+}
+/*Navbar Fixed bottom*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0%;
+    border: 1px solid black;
+    width: 100%;
+    background-color: #EF4423;
+    overflow: hidden;
+    height: 70px;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  h3{
+    padding: 10px;
+  }
+  .logos{
+    margin: 10px;
+  }
+
+/* @media screen and (min-width: 1280px){
+    body{
+        font-size: 20px;
+    }
+    .imagesJudo .center{
+        width:100%;
+    }
+    .imagesJudo .center img{
+        width:200px
+    }
+
+} */
+@media screen and (max-width: 700px){
+    .imagesJudo{
+        flex-direction: column;
+        border: 1px solid green;
+    }
+    .responsive{
+        font-size: 32px;
+    }
+     header{
+        flex-direction: column;
+        align-items: center;
+        height: 270px;
+        font-size: 32px;
+    }
+    nav ul{
+        flex-direction: column; 
+        position: relative;
+        bottom: 5%;
+    }
+   #logoJudo img{
+    position: relative;
+    top: 19%;
+   }
+   section{
+       margin-top: 250px;
+   }
+  
+}
